@@ -1,23 +1,17 @@
-import React, { useContext } from "react";
-import Navbars from "./Navbar/navbar";
-import "../App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Home/Home";
-import SingleProduct from "./SingleProduct/SingleProduct";
-import Cart from "./Cart/Cart";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Read from "./Components/Read";
+import Create from "./Components/Create";
+
 const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <Navbars />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Read />} />
         </Routes>
         <Routes>
-          <Route path="/singleproduct/:id" element={<SingleProduct />} />
-        </Routes>
-        <Routes>
-          <Route path="/addtocart" element={<Cart />} />
+          <Route path="/create" element={<Create/>} />
         </Routes>
       </BrowserRouter>
     </div>
