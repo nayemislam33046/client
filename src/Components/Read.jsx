@@ -13,12 +13,13 @@ const Read = () => {
     
   return (
     <div>
-        {myData?.map((data)=>{
+        {/* {myData?.map((data)=>{
           return <div key={data.id}>
             <p>{data.name}</p>
             <p>{data.age}</p>
           </div>
-        })}
+        })} */}
+        Hello
     </div>
   )
 }
